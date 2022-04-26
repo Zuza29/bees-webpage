@@ -9,6 +9,10 @@
     --font-bold: 'Pangolin', cursive;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 h2 {
     font-family: var(--font-bold);
 }
@@ -26,19 +30,23 @@ body {
     background-color: var(--pink);
     color: var(--black);
     font-family: var(--font-main);
+    font-size: 1.5rem;
 }
 
 .header {
     background-color: var(--orange-light);
     display: block;
     min-height: 200px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    letter-spacing: 0.5rem;
 }
 
 .navbar {
     background-color: var(--orange-dark);
     display: flex;
     justify-content: space-evenly;
-    min-height: 50px;
+    min-height: 100px;
     align-items: center;
     font-size: 1.7rem;
 }
@@ -67,7 +75,6 @@ a:hover {
 .column-side {
     width: 25%;
     float: left;
-    display: flex;
     min-height: 500px;
     background-color: var(--orange-light);
 }
@@ -83,11 +90,22 @@ a:hover {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 60px;
+    margin-bottom: 0px;
 }
 
 .bee-image {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 50%;
+    max-height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.side-column-text {
+    text-align: center;
+    padding: 30px 40px 60px 40px;
+    line-height: 3rem;
 }
 
 .footer {
@@ -99,7 +117,7 @@ a:hover {
 .footer-header {
     font-family: var(--font-bold);
     font-size: 3rem;
-    line-height: 150px;
+    line-height: 157px;
 }
 
 .footer-column-left {
@@ -109,6 +127,8 @@ a:hover {
     background-color: var(--orange-dark);
     min-height: 150px;
     padding-left: 70px;
+    padding-bottom: 70px;
+    padding-top: 50px;
 }
 
 .footer-column-right {
@@ -117,11 +137,14 @@ a:hover {
     float: right;
     background-color: var(--orange-dark);
     min-height: 150px;
+    padding-bottom: 70px;
+    padding-top: 50px;
 }
 
 .footer-text {
     font-size: 1.7rem;
     margin-bottom: 0px;
+    padding-top: 30px;
 }
 
 .sm-box {
@@ -176,4 +199,34 @@ a:hover {
     content: " ";
     clear: both;
     height: 0;
+}
+
+.page {
+    width: 75%;
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.page h1 {
+    font-size: 3rem;
+    padding-top: 0px;
+}
+
+.page-header {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    font-family: var(--font-bold);
+    margin-bottom: 30px;
+}
+
+.page p {
+    padding: 0px 100px 70px 100px;
+    text-align: justify;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
