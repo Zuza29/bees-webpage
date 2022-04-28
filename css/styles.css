@@ -33,6 +33,7 @@ body {
     font-size: 1.5rem;
 }
 
+
 .header {
     background-color: var(--orange-light);
     display: block;
@@ -73,10 +74,13 @@ a:hover {
 }
 
 .column-side {
+    display: block;
     width: 25%;
-    float: left;
-    min-height: 500px;
+    float: right;
+    height: 100%;
     background-color: var(--orange-light);
+    border-left: 2px dashed var(--orange-dark);
+    border-right: 2px dashed var(--orange-dark);
 }
 
 .row:after {
@@ -206,6 +210,7 @@ a:hover {
     display: block;
     margin: auto;
     margin-top: 80px;
+    margin-bottom: 100px;
 }
 
 .page h1 {
@@ -229,4 +234,15 @@ a:hover {
     display: block;
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+.shop-image {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 300px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 50px;
 }
